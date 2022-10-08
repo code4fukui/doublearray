@@ -7,23 +7,13 @@ JavaScript implementation of Double-Array trie.
 Usage
 -----
 
+
 ### Build
 
-Node.js example
-
-    var doublearray = require('./doublearray.js');
-
-    var words = [
-        { k: 'a', v: 1 },
-        { k: 'abc', v: 2 },
-        { k: '奈良', v: 3 },
-        { k: '奈良先端', v: 4 },
-        { k: '奈良先端科学技術大学院大学', v: 5 }
-    ];
-
-    var trie = doublearray.builder().build(words);
 
 Browser example
+
+    import { doublearray } from "https://code4fukui.github.io/doublearray-es/doublearray.js";
 
     var words = [
         { k: 'a', v: 1 },
@@ -71,6 +61,9 @@ Load and create a new DoubleArray object from original buffers
 
     var loaded_trie = doublearray.load(base_buffer, check_buffer);
 
+### Todo
+
+test for ES modules
 
 Copyright and license
 ---------------------
